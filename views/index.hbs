@@ -1,0 +1,221 @@
+<form action="/" method="post">
+	<div class="input-field">
+
+		<p>Ответ<Br>
+			<textarea name="answer" cols="40" rows="3">{{ans}}</textarea>
+		</p>
+
+		<div class="radio">
+			<p><b>Укажите ваше артериальное давление:</b><Br>
+				<input class="custom-radio" type="radio" id="id-1" name="bp" checked value=0>
+				<label for="id-1">В норме</label><br>
+				<input class="custom-radio" type="radio" id="id-2" name="bp" value=1>
+				<label for="id-2">Повышенное</label><br>
+			</p>
+		</div>
+
+		<p><b>Укажите свой уровень холестерина:</b><Br>
+			<input class="custom-radio" type="radio" id="id-3" checked name="chol" value=0>
+			<label for="id-3">В норме</label><br>
+			<input class="custom-radio" type="radio" id="id-4" name="chol" value=1>
+			<label for="id-4">Повышен</label><br>
+		</p>
+
+		<p><b>Вы проверяли холестерин за последние 5 лет?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-5" checked name="chol_check" value=1>
+			<label for="id-5">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-6" name="chol_check" value=0>
+			<label for="id-6">Нет</label><br>
+			{{!-- <input type="radio" name="chol_check" checked value=1> Да<Br>
+			<input type="radio" name="chol_check" value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Укажите свой индекс массы тела:</b><br>
+			<input type="text" size="40" name="bmi">
+		</p>
+
+		<p><b>На данный момент вы выкурили больше 5 пачек сигарет за все время?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-7" checked name="smk" value=1>
+			<label for="id-7">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-8" name="smk" value=0>
+			<label for="id-8">Нет</label><br>
+			{{!-- <input type="radio" name="smk" checked value=1> Да<Br>
+			<input type="radio" name="smk" value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>У вас были инсульты?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-9" name="stroke" value=1>
+			<label for="id-9">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-10" checked name="stroke" value=0>
+			<label for="id-10">Нет</label><br>
+			{{!-- <input type="radio" name="stroke" value=1> Да<Br>
+			<input type="radio" name="stroke" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>У вас есть диабет?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-11" checked name="diabetes" value=0>
+			<label for="id-11">Нет/Только во время беременности</label><br>
+			<input class="custom-radio" type="radio" id="id-12" name="diabetes" value=1>
+			<label for="id-12">Преддиабет или пограничный диабет</label><br>
+			<input class="custom-radio" type="radio" id="id-13" name="diabetes" value=2>
+			<label for="id-13">Есть</label><br>
+			{{!-- <input type="radio" name="diabetes" checked value=0> Нет/Только во время беременности<Br>
+			<input type="radio" name="diabetes" value=1> Преддиабет или пограничный диабет<Br>
+			<input type="radio" name="diabetes" value=2> Есть<Br> --}}
+		</p>
+
+		<p><b>Занимались ли вы физической активностью за последние 30 дней?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-14" name="phActivity" value=1>
+			<label for="id-14">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-15" checked name="phActivity" value=0>
+			<label for="id-15">Нет</label><br>
+			{{!-- <input type="radio" name="phActivity" value=1> Да<Br>
+			<input type="radio" name="phActivity" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Вы едите фрукты каждый день?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-16" name="fruits" value=1>
+			<label for="id-16">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-17" checked name="fruits" value=0>
+			<label for="id-17">Нет</label><br>
+			{{!-- <input type="radio" name="fruits" value=1> Да<Br>
+			<input type="radio" name="fruits" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Вы едите овощи каждый день?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-18" name="vegetables" value=1>
+			<label for="id-18">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-19" checked name="vegetables" value=0>
+			<label for="id-19">Нет</label><br>
+			{{!-- <input type="radio" name="vegetables" value=1> Да<Br>
+			<input type="radio" name="vegetables" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Сколько порций алкоголя в неделю вы употребляете?:</b><br>
+			<input type="text" size="40" name="alco">
+		</p>
+
+		<p><b>У вас есть медицинская страховка?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-20" checked name="hlthCare" value=1>
+			<label for="id-20">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-21" name="hlthCare" value=0>
+			<label for="id-21">Нет</label><br>
+			{{!-- <input type="radio" name="hlthCare" checked value=1> Да<Br>
+			<input type="radio" name="hlthCare" value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Были ли у вас случаи за последние 12 месяцев, когда вам нужно было обратиться ко врачу, но вы не могли
+				этого
+				сделать из-за стоимости?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-22" name="docCost" value=1>
+			<label for="id-22">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-23" checked name="docCost" value=0>
+			<label for="id-23">Нет</label><br>
+			{{!-- <input type="radio" name="docCost" value=1> Да<Br>
+			<input type="radio" name="docCost" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Укажите собственную оценку своего здоровья:</b><Br>
+			<input class="custom-radio" type="radio" id="id-24" checked name="genHlth" value=1>
+			<label for="id-24">Отлично</label><br>
+			<input class="custom-radio" type="radio" id="id-25" name="genHlth" value=2>
+			<label for="id-25">Хорошо</label><br>
+			<input class="custom-radio" type="radio" id="id-26" name="genHlth" value=3>
+			<label for="id-26">Удовлитворительно</label><br>
+			<input class="custom-radio" type="radio" id="id-27" name="genHlth" value=4>
+			<label for="id-27">Плохо</label><br>
+			<input class="custom-radio" type="radio" id="id-28" name="genHlth" value=5>
+			<label for="id-28">Ужасно</label><br>
+			{{!-- <input type="radio" name="genHlth" checked value=1> Отлично<Br>
+			<input type="radio" name="genHlth" value=2> Хорошо<Br>
+			<input type="radio" name="genHlth" value=3> Удовлитворительно<Br>
+			<input type="radio" name="genHlth" value=4> Плохо<Br>
+			<input type="radio" name="genHlth" value=5> Ужасно<Br> --}}
+		</p>
+
+		<p><b>Сколько дней из последних 30 у вас было плохое эмоциональное состояние?:</b><br>
+			<input type="text" size="40" name="mntHlth">
+		</p>
+
+		<p><b>Были ли у вас физические травмы за последние 30 дней?:</b><br>
+			<input class="custom-radio" type="radio" id="id-29" name="phHlth" value=1>
+			<label for="id-29">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-30" checked name="phHlth" value=0>
+			<label for="id-30">Нет</label><br>
+			{{!-- <input type="radio" name="phHlth" value=1> Да<Br>
+			<input type="radio" name="phHlth" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Испытывали ли вы серьезные трудности при ходьбе или подъеме по лестнице:</b><Br>
+			<input class="custom-radio" type="radio" id="id-31" name="diffWalk" value=1>
+			<label for="id-31">Да</label><br>
+			<input class="custom-radio" type="radio" id="id-32" checked name="diffWalk" value=0>
+			<label for="id-32">Нет</label><br>
+			{{!-- <input type="radio" name="diffWalk" value=1> Да<Br>
+			<input type="radio" name="diffWalk" checked value=0> Нет<Br> --}}
+		</p>
+
+		<p><b>Укажите ваш пол:</b><Br>
+			<input class="custom-radio" type="radio" id="id-33" checked name="sex" value=1>
+			<label for="id-33">Муж</label><br>
+			<input class="custom-radio" type="radio" id="id-34" name="sex" value=0>
+			<label for="id-34">Жен</label><br>
+			{{!-- <input type="radio" name="sex" checked value=1> Муж<Br>
+			<input type="radio" name="sex" value=0> Жен<Br> --}}
+		</p>
+
+		<p><b>Укажите ваш возраст?:</b><br>
+			<input type="text" size="40" name="age">
+		</p>
+
+		<p><b>Укажите уровень вашего образования:</b><Br>
+			<input class="custom-radio" type="radio" id="id-35" checked name="education" value=1>
+			<label for="id-35">Никогда не ходил в школу</label><br>
+			<input class="custom-radio" type="radio" id="id-36" name="education" value=2>
+			<label for="id-36">Закончил 1-8 классов</label><br>
+			<input class="custom-radio" type="radio" id="id-37" name="education" value=3>
+			<label for="id-37">Закончил 9-11 классов или 1-2 года в колледже</label><br>
+			<input class="custom-radio" type="radio" id="id-38" name="education" value=4>
+			<label for="id-38">Закончил 1-2 курса ВУЗа или 3-4 года колледжа</label><br>
+			<input class="custom-radio" type="radio" id="id-39" name="education" value=5>
+			<label for="id-39">Бакалавр</label><br>
+			<input class="custom-radio" type="radio" id="id-40" name="education" value=6>
+			<label for="id-40">Другое</label><br>
+			{{!-- <input type="radio" name="education" checked value=1> Никогда не ходил в школу<Br>
+			<input type="radio" name="education" value=2> Закончил 1-8 классов<Br>
+			<input type="radio" name="education" value=3> Закончил 9-11 классов или 1-2 года в колледже<Br>
+			<input type="radio" name="education" value=4> Закончил 1-2 курса ВУЗа или 3-4 года колледжа<Br>
+			<input type="radio" name="education" value=5> Бакалавр<Br>
+			<input type="radio" name="education" value=6> Другое<Br> --}}
+		</p>
+
+		<p><b>Укажите ваш ежемесячный уровень дохода (руб):</b><Br>
+			<input class="custom-radio" type="radio" id="id-41" checked name="income" value=1>
+			<label for="id-41">До 7000</label><br>
+			<input class="custom-radio" type="radio" id="id-42" name="income" value=2>
+			<label for="id-42">7001 - 14000</label><br>
+			<input class="custom-radio" type="radio" id="id-43" name="income" value=3>
+			<label for="id-43">14001 - 27000</label><br>
+			<input class="custom-radio" type="radio" id="id-44" name="income" value=4>
+			<label for="id-44">27001 - 45000</label><br>
+			<input class="custom-radio" type="radio" id="id-45" name="income" value=5>
+			<label for="id-45">45001 - 60000</label><br>
+			<input class="custom-radio" type="radio" id="id-46" name="income" value=6>
+			<label for="id-46">60001 - 75000</label><br>
+			<input class="custom-radio" type="radio" id="id-47" name="income" value=7>
+			<label for="id-47">75001 - 100000</label><br>
+			<input class="custom-radio" type="radio" id="id-48" name="income" value=8>
+			<label for="id-48">Больше 100000</label><br>
+			{{!-- <input type="radio" name="income" checked value=1> До 7000<Br>
+			<input type="radio" name="income" value=2> 7001 - 14000<Br>
+			<input type="radio" name="income" value=3> 14001 - 27000<Br>
+			<input type="radio" name="income" value=4> 27001 - 45000<Br>
+			<input type="radio" name="income" value=5> 45001 - 60000<Br>
+			<input type="radio" name="income" value=6> 60001 - 75000<Br>
+			<input type="radio" name="income" value=7> 75001 - 100000<Br>
+			<input type="radio" name="income" value=8> Больше 100000<Br> --}}
+		</p>
+	</div>
+	<p><button type="submit" class="btn">Submit</button>
+	</p>
+</form>

@@ -1,0 +1,31 @@
+<form action="/chol" method="post">
+	<h2>Cholesterol</h2>
+
+	<div class="input-field">
+		<p>Комментарий<Br>
+			<textarea name="answer_ch" cols="40" rows="3">{{ans_ch}}</textarea>
+		</p>
+		<p><b>Введите значение общего холестерина:</b><br>
+			<input type="text" size="40" name="general_ch">
+		</p>
+		<p><b>Введите значение холестерина низкой плотности (ЛПНП):</b><br>
+			<input type="text" size="40" name="low_ch">
+		</p>
+		<p><b>Введите значение холестерина высокой плотности (ЛПВП):</b><br>
+			<input type="text" size="40" name="high_ch">
+		</p>
+		<p><b>Введите значение триглицерина:</b><br>
+			<input type="text" size="40" name="trig">
+		</p>
+		<p><b>Укажите ваш пол?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-53" checked name="sex_ch" value=0>
+			<label for="id-53">Муж</label><br>
+			<input class="custom-radio" type="radio" id="id-54" name="sex_ch" value=1>
+			<label for="id-54">Жен</label><br>
+			{{!-- <input type="radio" name="sex_ch" checked value=0> Муж<Br>
+			<input type="radio" name="sex_ch" value=1> Жен<Br> --}}
+		</p>
+	</div>
+	<p><button type="submit" class="btn">Submit</button>
+	</p>
+</form>

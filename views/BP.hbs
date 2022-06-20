@@ -1,0 +1,31 @@
+<form action="/bp" method="post">
+	<h2>BP</h2>
+
+	<div class="input-field">
+		<p>Комментарий<Br>
+			<textarea name="answer_bp" cols="40" rows="3">{{ans_bp}}</textarea>
+		</p>
+		<p><b>Введите верхнее давление:</b><br>
+			<input type="text" size="40" name="high">
+		</p>
+		<p><b>Введите нижнее давление:</b><br>
+			<input type="text" size="40" name="low">
+		</p>
+		<p><b>К какой возрастной категории вы относитесь?:</b><Br>
+			<input class="custom-radio" type="radio" id="id-49" checked name="age_cat" value=0>
+			<label for="id-49">16-20 лет</label><br>
+			<input class="custom-radio" type="radio" id="id-50" name="age_cat" value=1>
+			<label for="id-50">20-40 лет</label><br>
+			<input class="custom-radio" type="radio" id="id-51" name="age_cat" value=2>
+			<label for="id-51">40-60 лет</label><br>
+			<input class="custom-radio" type="radio" id="id-52" name="age_cat" value=3>
+			<label for="id-52">Старше 60 лет</label><br>
+			{{!-- <input type="radio" name="age_cat" checked value=0> 16-20 лет<Br>
+			<input type="radio" name="age_cat" value=1> 20-40 лет<Br>
+			<input type="radio" name="age_cat" value=2> 40-60 лет<Br>
+			<input type="radio" name="age_cat" value=3> Старше 60 лет<Br> --}}
+		</p>
+	</div>
+	<p><button type="submit" class="btn">Submit</button>
+	</p>
+</form>

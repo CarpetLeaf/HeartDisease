@@ -1,0 +1,20 @@
+<nav class="blue darken-4">
+	<div class="nav-wrapper">
+		<a href="/" class="brand-logo">Forecasting Heart Disease</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+
+			{{#if isIndex}}
+			<li class="active"><a href="/bp">Давлеине</a></li>
+			{{else}}
+			<li><a href="/bp">Давлеине</a></li>
+			{{/if}}
+
+			{{#if isCreate}}
+			<li class="active"><a href="/chol">Холестерин</a></li>
+			{{else}}
+			<li><a href="/chol">Холестерин</a></li>
+			{{/if}}
+
+		</ul>
+	</div>
+</nav>
